@@ -1,0 +1,97 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
+\usepackage[UTF8, scheme=plain]{ctex}  % 加入 scheme=plain 选项
+\usepackage{titlesec, enumitem, hyperref}
+
+\titleformat{\section}{\large\bfseries}{}{0pt}{}  % Formatting section titles
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{张津睿}}\\
+    辽宁大连, 邮编: 116021 \\
+    邮箱: jerryzhang40@gmail.com \\
+    学生邮箱: zhangjr1022@mails.jlu.edu.cn \\
+    移动电话: +86-134-7894-0406 \\
+    \href{https://github.com/unjerry}{GitHub: unjerry}
+\end{center}
+
+\section*{教育经历}
+\textbf{吉林大学}, 吉林, 长春  \hfill 预期毕业: 2026  \\
+数学学士 \\
+相关课程: C语言, 数值分析, 最优控制。
+
+\section*{研究兴趣方向}
+Machine Learning, Deep Learning, Reinforcement Learning, Numerical Analysis, PINN \\
+
+
+\section*{研究经历}
+\textbf{学习并开发全部C++实现的ANN}
+\hfill 2023年03月 – 2023年04月\\
+自学机器学习相关知识，学习了深度学习和强化学习的相关
+算法，并自己从零运用学到的数学分析和高等代数知识，运用
+C++构建矩阵乘法和自动求导系统实现了一个ANN。
+\\
+\textbf{学习PINN相关算法并实现burgers方程的PINN训练求解}
+\hfill 2023年05月 – 2023年07月\\
+在李兹谦学长指导下，学习PINN相关算法并实现burgers
+方程的PINN训练求解。后自学了连续介质力学相关方程
+实现了对简单流体力学方程的PINN训练求解。并成功
+出现了类似卡门涡街的现象。
+\\
+\textbf{FFT和NTT支持的任意位数高精度整数运算}
+\hfill 2023年09月 – 2023年12月\\
+使用NTT(数论变换)和FFT(快速傅里叶变换)实现了任意位数高精度整数乘法算法。
+\cite{firstApproachGithubProject}.
+\\
+\textbf{开发计算微分几何的网格细分算法}
+\hfill 2024年01月 – 2024年07月\\
+在宋海明老师指导下，参与基于C++工程进行
+三角形和四边形网格细分算法开发，
+并完成第一期项目。
+\\
+\textbf{arXiv上独立发表论文《Differential Informed Auto-Encoder》}
+\hfill 2024年09月 – 2024年12月\\
+在数据各阶导数和偏导数构成的像空间中
+进行回归分析和机器学习，找到内蕴的微
+分方程关系并用神经网络建模。基于PINN
+算法实现由神经网络学习到的内蕴关系驱动
+的数据再生成。其中微分关系的神经网络构
+成编码器，PINN算法构成解码器。由此构成
+一个微分信息自编码器。
+\cite{zhang2024differentialinformedautoencoder}
+
+\section*{技术技能}
+\textbf{编程技能:} 熟练掌握多种编程语言, 包括但不限于, C/C++, Python, MATLAB, LaTeX, CudaC++  \\
+其中Python能熟练运营torch和numpy等库进行机器学习和数据分析 \\
+C++能熟练运用CMake进行跨平台工程代码构建 \\
+\textbf{软件工程:} CMake, git \\
+\textbf{数学能力:} 熟练掌握高等代数，能够熟练的用线性空间等理论对机器学习中的问题进行分析建模 \\
+熟练掌握基础微积分，并能够进行一定程度的高等数学分析。\\
+\textbf{其他:} 有着算法学习经验，能够用C语言实现若干计算机科学领域基础算法
+包括但不限于二叉树，二叉查找树，红黑树，树状数组，线段树，动态规划。\\
+数据分析,有着实战python爬虫经验，实现从xueqiu.com实时爬取股票数据
+并分析。\\
+机器学习，独立实现ANN,CNN,RNN,G-CNN等多种神经网络模型。\\
+软件工程，熟练运用git进行工程和项目管理、文章撰写等复杂任务。
+
+% \section*{Awards and Honors}
+% - [Math Olympiad Award], [Year]
+% - [University Scholarship], [Year]
+
+\section*{Publications and Presentations}
+\textbf{Differential Informed Auto-Encoder} | arXiv:2410.18593  \\
+% \textbf{Talk Title} | Conference Name, Year
+
+% \section*{Teaching  Leadership}
+% \textbf{Teaching Assistant}, Course Name, University, Semester  \\
+% \textbf{Math Club President}, Institution, Year
+
+% \section*{Extracurricular Activities}
+% - Participated with 
+% - Competed in [Hackathon/Competition Name]
+
+\bibliographystyle{plain}  % or another style like unsrt, IEEEtran, etc.
+\bibliography{CV}  % references.bib is the file name
+
+\end{document}
