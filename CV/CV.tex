@@ -1,7 +1,10 @@
 \documentclass[a4paper,10pt]{article}
 \usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
 \usepackage[UTF8, scheme=plain]{ctex}  % 加入 scheme=plain 选项
-\usepackage{titlesec, enumitem, hyperref}
+\usepackage{titlesec, enumitem, hyperref,url}
+
+\usepackage[backend=biber]{biblatex}
+\addbibresource{CV.bib}  % 文件名后缀现在必须写上
 
 \titleformat{\section}{\large\bfseries}{}{0pt}{}  % Formatting section titles
 
@@ -30,19 +33,19 @@ Machine Learning, Deep Learning, Reinforcement Learning, Numerical Analysis, PIN
 \hfill 2023年03月 – 2023年04月\\
 自学机器学习相关知识，学习了深度学习和强化学习的相关
 算法，并自己从零运用学到的数学分析和高等代数知识，运用
-C++构建矩阵乘法和自动求导系统实现了一个ANN。
+C++构建矩阵乘法和自动求导系统实现了一个ANN\cite{firstApproachANN}。
 \\
 \textbf{学习PINN相关算法并实现burgers方程的PINN训练求解}
 \hfill 2023年05月 – 2023年07月\\
 在李兹谦学长指导下，学习PINN相关算法并实现burgers
-方程的PINN训练求解。后自学了连续介质力学相关方程
+方程的PINN训练求解\cite[PINNwork2]{PINNwork2}。后自学了连续介质力学相关方程
 实现了对简单流体力学方程的PINN训练求解。并成功
-出现了类似卡门涡街的现象。
+出现了类似卡门涡街的现象\cite[PINNwork1]{PINNwork1}。
 \\
 \textbf{FFT和NTT支持的任意位数高精度整数运算}
 \hfill 2023年09月 – 2023年12月\\
 使用NTT(数论变换)和FFT(快速傅里叶变换)实现了任意位数高精度整数乘法算法。
-\cite{firstApproachGithubProject}.
+\cite{NTT_ingeterfastmultiplication}.
 \\
 \textbf{开发计算微分几何的网格细分算法}
 \hfill 2024年01月 – 2024年07月\\
@@ -84,8 +87,11 @@ C++能熟练运用CMake进行跨平台工程代码构建 \\
           队员：赵艺婷、晋中宝、张津睿 \\
           负责任务：主要负责模型建立与编程实现
     \item 数学学院积分大赛一等奖，2023年
-    \item 担任班级心理委员
 \end{itemize}
+
+\section*{学生工作}
+担任班级心理委员,[大一至今]
+
 
 \section*{Publications and Presentations}
 \textbf{Differential Informed Auto-Encoder} | arXiv:2410.18593  \\
@@ -99,7 +105,6 @@ C++能熟练运用CMake进行跨平台工程代码构建 \\
 % - Participated with 
 % - Competed in [Hackathon/Competition Name]
 
-\bibliographystyle{plain}  % or another style like unsrt, IEEEtran, etc.
-\bibliography{CV}  % references.bib is the file name
+\printbibliography
 
 \end{document}
